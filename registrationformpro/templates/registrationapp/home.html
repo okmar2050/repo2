@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user registration</title>
+    <style>
+        body{
+            color: red;
+            background-color: lightblue;
+
+        }
+        h2{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<h1>Welcome to our website.</h1>
+ <form  method="post" >
+     {% csrf_token %}
+     First_name:<input type="text"name="first_name"value=""><br>
+     Last_name:<input type="text"name="last_name"value=""> <br>
+     Username:<input type="text"name="username"value="" ><br>
+     Email:<input type="email"name="email"value=""><br>
+     Password:<input type="password"name="password" value=""><br>
+{#     Confirm Password<input type="password",name=laceholder="password""confirm_password",placeholder="password2"><br>#}
+
+     <input type="submit"  value="Register"/>
+
+ </form>
+
+</body>
+</html>
