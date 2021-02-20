@@ -24,3 +24,5 @@ def logout(request):
     pass
 def login(request):
     pass
+def about(request):
+    pass
