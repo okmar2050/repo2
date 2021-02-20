@@ -20,3 +20,7 @@ def register(request):
         return redirect('/')
     else:
          return render(request,'registrationapp/home.html')
+def logout(request):
+    pass
+def login(request):
+    pass
